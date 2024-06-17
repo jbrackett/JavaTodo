@@ -12,6 +12,7 @@ A simple Todo application that allows users to create, read, update, and delete 
 - Mockito
 - JUnit 5
 - Docker
+- Testcontainers
 
 ## Architecture
 
