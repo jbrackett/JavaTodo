@@ -23,7 +23,7 @@ public record Todo(
         String message,
         Boolean completed,
         @Transient @JsonIgnore @Schema(hidden = true)
-        Boolean newOne) implements Serializable, Persistable<UUID> {
+        Boolean newOne) implements Serializable, Comparable<Todo>, Persistable<UUID> {
 
     public Todo {
         if (id == null) {
@@ -63,5 +63,10 @@ public record Todo(
     @JsonIgnore
     public boolean isNew() {
         return newOne;
+    }
+
+    @Override
+    public int compareTo(Todo o) {
+        return completed.compareTo(o.completed);
     }
 }

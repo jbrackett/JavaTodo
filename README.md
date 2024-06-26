@@ -3,7 +3,7 @@
 A simple Todo application that allows users to create, read, update, and delete todos.
 
 ## Technologies
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Data JDBC
 - FlywayDB
