@@ -1,6 +1,5 @@
 package com.brackett.sample.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -25,8 +24,6 @@ public class TodoControllerIntegrationTest {
 
     @Autowired
     private MockMvc mockMvc;
-
-    private final ObjectMapper mapper = new ObjectMapper();
 
     @Container
     static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-alpine");

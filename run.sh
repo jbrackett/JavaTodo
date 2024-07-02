@@ -30,9 +30,9 @@ case $ARGS in
     ;;
   -h|--help)
     cat <<EOM
-Usage: ./run.sh [-d|--docker] [-m|--minimal] [-j|--json] [-r|--raw] [-h|--help]
-   -m --minimal   tiny messages (default)
-   -d --docker    run in docker container
+Usage: ./run.sh [-d|--docker] [-m|--minimal] [-h|--help]
+   -m --minimal   run deps in docker but not application (default)
+   -d --docker    run application in docker container
    -D --debug     run in remote JVM debug mode
 EOM
     ;;
